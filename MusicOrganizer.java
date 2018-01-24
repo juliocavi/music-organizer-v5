@@ -185,4 +185,10 @@ public class MusicOrganizer
             }
         }
     }
+    
+    public void setGenreOfTrack(int index, String genre){
+        if(index >= 0 && index < tracks.size()){
+            tracks.get(index).setGenre(genre);
+        }
+    }
 }
